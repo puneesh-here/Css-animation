@@ -1,0 +1,120 @@
+body{
+
+    text-align: center;
+    background-color: aquamarine;
+    margin-bottom: 1000px;
+
+}
+.wrapper{
+    width: 288px;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.css{
+   position: absolute;
+   top: -400px;
+   transform-origin:10px 10px ;
+   animation: drop 1s ease forwards, swing 2s 3s ease forwards;
+}
+@keyframes drop{
+    0%{opacity: 0;}
+    70%{
+        position: absolute;
+        top: 400px;
+    }
+    100%{
+        position: absolute;
+        top: 300px;
+        opacity: 1;
+    }
+}
+@keyframes swing{
+    0%{transform: translateY(200px) rotateZ(0deg);}
+    40%{transform: translateY(200px) rotateZ(90deg)}
+    70%{transform: translateY(200px) rotateZ(70deg)}
+    100%{transform: translateY(200px) rotateZ(75deg)}
+}
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background: rgb(36, 12, 252);
+    color: rgb(239, 245, 245);
+    border-radius: 150px;
+    cursor: pointer;
+    transition: 1s ;
+    font-size: 20px;
+}
+.circle:hover{
+    background: rgb(2, 39, 88);
+    transform: rotate(360deg);
+}
+.car{
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 5px ;
+    height: 0px;
+    width: 150px;
+position: absolute;
+
+}
+#car{
+    top: 90%;
+    border: 5px ;
+    height:250px;
+    width: 255px;
+    box-sizing: border-box;
+    border-radius: 500px;
+    position: absolute;
+    animation-name: drive,jump;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+    
+}
+@keyframes drive{
+
+    from{ transform: translateX(-100px)}
+
+    to{transform: translateX(700px)}
+}
+@keyframes jump{
+
+    0%{top: 40%; }
+
+    50%{top: 10%;}
+
+    100%{top: 40%;}
+}
+
+.posterdad{
+    position: absolute;
+    top: 900px;
+    
+    
+
+}
+
+.poster{
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+    color: cornsilk;
+    font-size:50px;
+    position: absolute;
+}
+.backposter{
+    background-color: rgb(3, 155, 160);
+    width: 400px;
+    height: 400px;
+    color: cornsilk;
+    font-size:50px;
+    transform: rotateY(90deg);
+
+    
+
+}
+
+
