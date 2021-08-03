@@ -1,45 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
 body{
-    color: darkgrey;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Comfortaa', cursive;
     background-color:#333333;
-}
-
-
-
-.square{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 200px;
+    justify-content: center;
+}
+.music-contaner{
+    background-color: #8f8f8f;
+    border-radius: 15px;
+    display: flex;
+    height: 255px;
     width: 200px;
-    position: relative;
-    perspective: 200px;
+    padding: 20px 34px;
+    margin: 50px;
 }
-.square div {
-    position: absolute;
-    top: 0;
-    height: 100px;
-    width: 100px;
-    background-color: coral;
-    animation: flip 2s linear infinite;
-    transform-origin: right bottom;
-}
-
-
-.square div:nth-child(2){
-
-    animation-delay:1s;
-    opacity: 0.8;
-}
-
-@keyframes flip {
-    0%{transform: rotateX(0) rotateY(0)}
-
-    25%{transform: rotateX(0) rotateY(180deg)}
-
-    50%{transform: rotateX(180deg) rotateY(180deg)}
-
-    75%{transform: rotateX(180deg) rotateY(0)}
-
-    100%{transform: rotateX(0) rotateY(0)}
+.img-contaner{
+    position:relative;
+    width: 110px;
 
 }
+.img-contaner img {
+    width: inherit;
+    margin: 5px;
+    height: 110px;
+    
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation img {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+
+}
+.action-btn{
+    border-radius: 50px;
+    border: none;
+    margin: 3px;
+    cursor: pointer;
+    background-color:#8f8f8f;
+}
+music-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: rgb(161, 161, 161);
+    transform: translateY(0%);
+    transform: transform 0.3s ease-in , opacity 0.3s ease-in;
+}
+.progess-contaner{
+    background: black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    height: 4px;
+    width: 100%;
+
+}
+.progess{
+background-color: rgb(218, 218, 218);
+border-radius: 5px;
+height: 100%;
+width: 50%;
+transition:  width 0.1s linear;
+}
+
