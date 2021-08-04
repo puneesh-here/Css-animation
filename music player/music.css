@@ -21,10 +21,10 @@ body{
     justify-content: center;
 }
 .music-contaner{
-    background-color: #8f8f8f;
+    background-color: #818181;
     border-radius: 15px;
     display: flex;
-    height: 365px;
+    height: 375px;
     width: 300px;
     padding: 20px 34px;
     margin: 50px;
@@ -61,22 +61,12 @@ body{
 .action-btn{
     border-radius: 50px;
     border: none;
-    margin: 3px;
-    margin-top: 5px;
-    cursor: pointer;
-    background-color:#8f8f8f;
-}
-music-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
     margin: 5px;
-    border-radius: 50px;
-    background-color: rgb(161, 161, 161);
-    transform: translateY(0%);
-    transform: transform 0.3s ease-in , opacity 0.3s ease-in;
+    margin-top: 7px;
+    cursor: pointer;
+    background-color:#818181;
 }
+
 .progess-contaner{
     background: black;
     border-radius: 5px;
