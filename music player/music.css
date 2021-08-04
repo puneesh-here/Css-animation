@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+#title{
+    text-align: center;
+    cursor: default;
+}
+
 body{
     margin: 0;
     height: 100vh;
@@ -19,20 +24,27 @@ body{
     background-color: #8f8f8f;
     border-radius: 15px;
     display: flex;
-    height: 255px;
-    width: 200px;
+    height: 365px;
+    width: 300px;
     padding: 20px 34px;
     margin: 50px;
 }
+#name{
+    cursor: default;
+    color: #8f8f8f;
+}
 .img-contaner{
     position:relative;
-    width: 110px;
+    right:0px;
+    left: 5px;
+    width: 210px;
 
 }
 .img-contaner img {
     width: inherit;
     margin: 5px;
-    height: 110px;
+    height: 210px;
+    border-radius: 6px;
     
 }
 .navigation{
@@ -41,8 +53,8 @@ body{
     justify-content: center;
 }
 .navigation img {
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
     margin: 5px;
 
 }
@@ -50,6 +62,7 @@ body{
     border-radius: 50px;
     border: none;
     margin: 3px;
+    margin-top: 5px;
     cursor: pointer;
     background-color:#8f8f8f;
 }
@@ -74,7 +87,7 @@ music-info{
 
 }
 .progess{
-background-color: rgb(218, 218, 218);
+background-color: rgb(221, 220, 220);
 border-radius: 5px;
 height: 100%;
 width: 50%;

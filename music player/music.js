@@ -18,3 +18,10 @@ let songIndex = 1
 loadsong(songs[songIndex])
 
 //update song details
+function loadsong(song) {
+    title.innerText = song
+    audio.src = `music/${song}.mp3`
+    cover.src = `Photo/${song}.jpg`
+
+
+}
